@@ -7,7 +7,6 @@ file(GLOB_RECURSE APP_SRCS ${APP_DIR}/*.c)
 idf_component_register(
         SRCS
             "main.c"
-            "func_testing.c"
             ${UI_SRCS}
             ${APP_SRCS}
         INCLUDE_DIRS
