@@ -1,0 +1,27 @@
+set(srcs
+        esp32s3_bsp_board.c
+        esp32s3_bsp_sdcard.c
+        esp32s3_bsp_mic.c
+        esp32s3_bsp_camera.c
+        esp32s3_bsp_speaker.c
+        esp32s3_bsp_display.c
+)
+idf_component_register(
+        SRCS ${srcs}
+        INCLUDE_DIRS
+        "."
+        REQUIRES
+        nvs_flash
+        fatfs
+        sdmmc
+        esp_driver_i2s
+        esp32-camera
+        esp-tls
+        tcp_transport
+        http_parser
+        esp_event
+        json
+        esp_http_client
+        esp_lcd
+        esp_lcd_gc9a01
+)

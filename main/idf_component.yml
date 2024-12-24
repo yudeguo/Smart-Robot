@@ -1,0 +1,4 @@
+dependencies:
+  espressif/esp32-camera: "*"
+  espressif/esp-sr: ">=1.9.0"
+  esp_lcd_gc9a01: "^1.0"
